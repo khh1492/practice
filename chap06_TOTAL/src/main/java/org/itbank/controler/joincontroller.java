@@ -23,7 +23,7 @@ public class joincontroller {
 
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String joinGetHandle() {
-		return "t_join";
+		return "join";
 	}
 
 	@PostMapping("/join")
