@@ -10,6 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import org.itbank.controler.MemberDaoMyBastis;
@@ -19,7 +21,7 @@ public class joincontroller {
 	@Autowired
 	MemberDaoMyBastis memberDao;
 
-	@GetMapping(path = "/join")
+	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String joinGetHandle() {
 		return "t_join";
 	}
