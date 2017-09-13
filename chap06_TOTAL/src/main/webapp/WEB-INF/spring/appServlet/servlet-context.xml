@@ -16,6 +16,7 @@
 		<property name="suffix" value=".jsp" />
 		<property name="order" value="9" />
 	</bean>
+	
 	<bean class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
 		<property name="order" value="1" />
 	</bean>
