@@ -22,6 +22,14 @@ public class IndexController {
 	@Autowired
 	MemberDao memberDao;
 
+	
+	@GetMapping("/")
+	public String loginHandle(Model model) {
+		model.addAttribute("section", "index");
+		return "t_expr";
+	}
+	
+	
 	@RequestMapping({ "/", "/index" })
 	public ModelAndView rootHandle() {
 		ModelAndView mav = new ModelAndView("t_expr");
